@@ -86,7 +86,7 @@ class CustomTextFormField extends StatelessWidget {
               hintStyle: TextStyle(
                 color: AppColors.fieldFontColor,
                 fontSize: 18,
-                fontFamily: AppFonts.roboto,
+                fontFamily: AppFonts.spacemono,
                 fontWeight: FontWeight.w400,
               ),
               focusedBorder: OutlineInputBorder(
@@ -111,7 +111,7 @@ class CustomTextFormField extends StatelessWidget {
             style: TextStyle(
               color: AppColors.appBlack,
               fontSize: 18,
-              fontFamily: AppFonts.roboto,
+              fontFamily: AppFonts.spacemono,
               fontWeight: FontWeight.w400,
             ),
             onChanged: onChanged,
@@ -157,7 +157,7 @@ class CustomField extends TextFormField {
             hintStyle: TextStyle(
               color: AppColors.fieldFontColor,
               fontSize: 18,
-              fontFamily: AppFonts.roboto,
+              fontFamily: AppFonts.spacemono,
               fontWeight: FontWeight.w400,
             ),
             border: InputBorder.none,
@@ -183,7 +183,7 @@ class CustomField extends TextFormField {
           style: TextStyle(
             color: AppColors.appBlack,
             fontSize: 18,
-            fontFamily: AppFonts.roboto,
+            fontFamily: AppFonts.spacemono,
             fontWeight: FontWeight.w600,
           ),
           obscureText: isObscure ?? false,
@@ -212,7 +212,7 @@ class CustomText extends Text {
           overflow: TextOverflow.clip,
           style: TextStyle(
             color: color ?? AppColors.appBlack,
-            fontFamily: AppFonts.roboto,
+            fontFamily: AppFonts.spacemono,
             fontSize: fontSize ?? 9,
             fontWeight: fontWeight ?? FontWeight.normal,
             letterSpacing: letterSpacing,

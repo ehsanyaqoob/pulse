@@ -45,8 +45,16 @@ class CustomButton extends StatelessWidget {
     final defaultRadius = borderRadius ?? 12.0;
     final defaultHeight = height ?? 7.h;
     final defaultWidth = width ?? double.infinity;
-    final defaultFilledColor = filledColor ?? AppColors.primary;
-    final defaultLoaderColor = loaderColor ?? AppColors.appWhite;
+
+    // Theme-aware defaults
+    final defaultFilledColor = filledColor ?? AppColors.pulsePrimary;
+    final defaultLoaderColor = loaderColor ?? 
+        (fillColor ? AppColors.appWhite : AppColors.pulsePrimary);
+    final defaultBorderColor = borderColor ?? 
+        (fillColor ? Colors.transparent : AppColors.pulsePrimary);
+    final defaultTextColor = fillColor 
+        ? AppColors.appWhite 
+        : AppColors.pulsePrimary;
 
     return Padding(
       padding: EdgeInsets.only(top: topMargin),
@@ -56,7 +64,10 @@ class CustomButton extends StatelessWidget {
         color: Colors.transparent,
         child: InkWell(
           borderRadius: BorderRadius.circular(defaultRadius),
-          splashColor: hoverColor ?? defaultFilledColor.withOpacity(0.2),
+          splashColor: hoverColor ?? 
+              (fillColor 
+                  ? AppColors.appWhite.withOpacity(0.2) 
+                  : AppColors.pulsePrimary.withOpacity(0.2)),
           onTap: isDisabled || isLoading ? null : onTap,
           child: Container(
             height: defaultHeight,
@@ -64,24 +75,26 @@ class CustomButton extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(defaultRadius),
               border: Border.all(
-                color: borderColor ?? defaultFilledColor,
+                color: isDisabled 
+                    ? AppColors.greyMedium 
+                    : defaultBorderColor,
                 width: 1.0,
               ),
-              gradient: fillColor
+              gradient: fillColor && !isDisabled
                   ? LinearGradient(
                       colors: [
-                        defaultFilledColor.withOpacity(isDisabled ? 0.5 : 0.9),
-                        defaultFilledColor.withOpacity(isDisabled ? 0.5 : 0.9),
+                        defaultFilledColor.withOpacity(0.9),
+                        defaultFilledColor.withOpacity(0.9),
                       ],
                     )
                   : null,
-              color: fillColor ? null : Colors.transparent,
-              boxShadow: shadow
+              color: fillColor 
+                  ? (isDisabled ? AppColors.greyMedium : null)
+                  : Colors.transparent,
+              boxShadow: shadow && !isDisabled
                   ? [
                       BoxShadow(
-                        color:
-                            borderColor?.withOpacity(0.5) ??
-                            defaultFilledColor.withOpacity(0.3),
+                        color: AppColors.iconShadow,
                         spreadRadius: 1,
                         blurRadius: 6,
                         offset: const Offset(2, 2),
@@ -103,16 +116,13 @@ class CustomButton extends StatelessWidget {
                     )
                   : Text(
                       title,
-                      style:
-                          textStyle ??
+                      style: textStyle ??
                           TextStyle(
                             fontSize: 12.sp,
                             fontWeight: FontWeight.w600,
-                            color: fillColor
-                                ? (isDisabled
-                                      ? AppColors.lightGrey
-                                      : AppColors.appWhite)
-                                : defaultFilledColor,
+                            color: isDisabled
+                                ? AppColors.greyText
+                                : defaultTextColor,
                           ),
                     ),
             ),

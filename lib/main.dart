@@ -1,31 +1,35 @@
-import 'package:pulse/core/constants.dart';
 import 'package:pulse/core/export.dart';
 
 void main() {
-  runApp(AppView());
+  WidgetsFlutterBinding.ensureInitialized();
+  Get.put(ThemeController(), permanent: true);
+  runApp(MyApp());
 }
 
-
-class AppView extends StatefulWidget {
-  const AppView({super.key});
+class MyApp extends StatefulWidget {
+  MyApp({super.key});
 
   @override
-  State<AppView> createState() => _AppViewState();
+  State<MyApp> createState() => _MyAppState();
 }
 
-class _AppViewState extends State<AppView> {
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Sizer(
-      builder: (context, child, device){
+      builder: (context, orientation, deviceType) {
+        // Get the already registered ThemeController
+        final themeController = Get.find<ThemeController>();
+        
         return GetMaterialApp(
-          title: Constants.appName,
           debugShowCheckedModeBanner: false,
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: AppColors.pulsePrimary),
-            useMaterial3: true,
-          ),
-          home:  SplashView(),
+          title: 'Pulse',
+          theme: AppTheme.lightTheme,
+          darkTheme: AppTheme.darkTheme,
+          themeMode: themeController.isDarkMode.value
+              ? ThemeMode.dark
+              : ThemeMode.light,
+          home: SplashView(),
         );
       },
     );

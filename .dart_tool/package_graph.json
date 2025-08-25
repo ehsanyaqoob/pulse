@@ -28,6 +28,7 @@
         "hive_flutter",
         "hive_generator",
         "http",
+        "iconsax",
         "image_picker",
         "intl",
         "mask_text_input_formatter",
@@ -38,6 +39,7 @@
         "sizer",
         "sliding_clipped_nav_bar",
         "smooth_page_indicator",
+        "syncfusion_flutter_charts",
         "table_calendar",
         "url_launcher"
       ],
@@ -79,6 +81,23 @@
         "test_api",
         "vector_math",
         "vm_service"
+      ]
+    },
+    {
+      "name": "iconsax",
+      "version": "0.0.8",
+      "dependencies": [
+        "flutter"
+      ]
+    },
+    {
+      "name": "syncfusion_flutter_charts",
+      "version": "30.2.6+1",
+      "dependencies": [
+        "flutter",
+        "intl",
+        "syncfusion_flutter_core",
+        "vector_math"
       ]
     },
     {
@@ -586,6 +605,14 @@
         "stream_channel",
         "string_scanner",
         "term_glyph"
+      ]
+    },
+    {
+      "name": "syncfusion_flutter_core",
+      "version": "30.2.6",
+      "dependencies": [
+        "flutter",
+        "vector_math"
       ]
     },
     {

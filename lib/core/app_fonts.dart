@@ -4,4 +4,6 @@ class AppFonts {
   static String balsamiqSans = 'BalsamiqSans';
   static String roboto = 'Roboto';
   static String openSans = 'OpenSans';
+    static String spacemono = 'SpaceMono';
+
 }

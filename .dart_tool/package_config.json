@@ -404,6 +404,12 @@
       "languageVersion": "3.4"
     },
     {
+      "name": "iconsax",
+      "rootUri": "file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/iconsax-0.0.8",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "image_picker",
       "rootUri": "file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/image_picker-1.1.2",
       "packageUri": "lib/",
@@ -858,6 +864,18 @@
       "rootUri": "file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.4.1",
       "packageUri": "lib/",
       "languageVersion": "3.1"
+    },
+    {
+      "name": "syncfusion_flutter_charts",
+      "rootUri": "file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/syncfusion_flutter_charts-30.2.6+1",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "syncfusion_flutter_core",
+      "rootUri": "file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/syncfusion_flutter_core-30.2.6",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
     },
     {
       "name": "synchronized",

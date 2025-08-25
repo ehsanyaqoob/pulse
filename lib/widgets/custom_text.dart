@@ -1,11 +1,11 @@
 import 'package:flutter/services.dart';
 import 'package:pulse/core/export.dart';
 
-
 class CustomText extends Text {
   CustomText({
     super.key,
     required String text,
+    double? height,
     TextAlign textAlign = TextAlign.left,
     Color color = Colors.black,
     double fontSize = 9,
@@ -27,6 +27,8 @@ class CustomText extends Text {
            fontFamily: font,
            fontSize: fontSize,
            fontWeight: fontWeight,
+
+           height: height,
            letterSpacing: letterSpacing,
            decoration: textDecoration,
            decorationStyle: textDecorationStyle,
@@ -142,10 +144,7 @@ class CustomTextFormField extends StatelessWidget {
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(30),
-                borderSide: BorderSide(
-                  color: AppColors.primary,
-                  width: 1.5,
-                ),
+                borderSide: BorderSide(color: AppColors.primary, width: 1.5),
               ),
               errorBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(30),

@@ -7,6 +7,28 @@ class AppAssets {
   // PNG Assets
   // ─────────────────────────────────────────────────────────────────────────────
   static String ellipse = 'lib/assets/png/Ellipse.png';
+  static String pulselogo = 'lib/assets/png/pulse.png';
+  static String fitness_man = 'lib/assets/png/fitness_man.jpg';
+  static String freakone = 'lib/assets/png/freakone.jpg';
+  static String freaktwo = 'lib/assets/png/frealtwo.jpg';
+  static String freakthree = 'lib/assets/png/freakthree.jpg';
+  static String fitness = 'lib/assets/png/fitness.png';
+
+ static String fullbody = 'lib/assets/png/fullbody.jpg';
+  static String biceps = 'lib/assets/png/biceps.jpg';
+  static String back = 'lib/assets/png/back.jpg';
+  static String legs = 'lib/assets/png/legs.jpg';
+  static String triceps = 'lib/assets/png/triceps.jpg';
+  static String chest = 'lib/assets/png/chest.jpg';
+
+   static String fullbody_workout = 'lib/assets/png/fullbody_workout.png';
+  static String biceps_workout = 'lib/assets/png/biceps_workout.png';
+  static String back_workout = 'lib/assets/png/back_workout.png';
+  static String leg_workout = 'lib/assets/png/leg_workout.png';
+  static String triceps_workout = 'lib/assets/png/triceps_workout.png';
+  // static String chest = 'lib/assets/png/chest.jpg';
+  static String yoga = 'lib/assets/png/yoga.jpg';
+  static String boxing = 'lib/assets/png/boxing.jpg';
 
   // ─────────────────────────────────────────────────────────────────────────────
   // SVG Assets (Located in assets/icons/)
@@ -18,55 +40,17 @@ class AppAssets {
 
   static String profile = 'lib/assets/icons/profile.svg';
   static String profilefilled = 'lib/assets/icons/profilefilled.svg';
+
   static String bookmark = 'lib/assets/icons/bookmark.svg';
   static String bookmarkfilled = 'lib/assets/icons/bookmarkfilled.svg';
+
   static String bellfilled = 'lib/assets/icons/bell-filled.svg';
   static String bell = 'lib/assets/icons/notification.svg';
-  static String planeright = 'lib/assets/icons/planeright.svg';
 
-  static String airplane = 'lib/assets/icons/airplane.svg';
-  static String arrowleft = 'lib/assets/icons/arrowleft.svg';
-  static String calendar = 'lib/assets/icons/calendar.svg';
-  static String checkmark = 'lib/assets/icons/checkmark.svg';
-  static String chevron = 'lib/assets/icons/chevron.svg';
-  static String clock = 'lib/assets/icons/clock.svg';
-  static String doc = 'lib/assets/icons/doc.svg';
-  static String gearshape = 'lib/assets/icons/gearshape.svg';
-  static String globe = 'lib/assets/icons/globe.svg';
-  static String location = 'lib/assets/icons/location.svg';
-  static String person = 'lib/assets/icons/person.svg';
-  static String qrcode = 'lib/assets/icons/qrcode.svg';
-  static String seat = 'lib/assets/icons/seat.svg';
-  static String slider = 'lib/assets/icons/slider.svg';
-    static String round = 'lib/assets/icons/round.svg';
-  static String oneWay= 'lib/assets/icons/oneway.svg';
-  static String multiple = 'lib/assets/icons/multiple.svg';
-
-
-
-  // ── General Icons ──
-  static String svgLogo = 'lib/assets/icons/logo.svg';
-  static String id = 'lib/assets/icons/id.svg';
-  static String leftArrow = 'lib/assets/icons/left_arrow.svg';
-  static String dropdown = 'lib/assets/icons/dropdown.svg';
-  static String camera = 'lib/assets/icons/camera.svg';
-  static String clear = 'lib/assets/icons/clear.svg';
-  static String logout = 'assets/icons/logout.svg';
-
-  // ── Challan Section ──
-  static String challan = 'lib/assets/icons/challan.svg';
-  static String challan1 = 'lib/assets/icons/challan1.svg';
-
-  // ── History Section ──
-  static String history = 'lib/assets/icons/history.svg';
-  static String history1 = 'lib/assets/icons/history1.svg';
-
-  // ── Profile & Violator Section ──
-  static String violator = 'lib/assets/icons/violator.svg';
-  static String violator1 = 'lib/assets/icons/violator1.svg';
-
-  // ── Alerts & Documents ──
-  static String warning = 'lib/assets/icons/icon_warning.svg';
-  static String documentHandover =
-      'lib/assets/icons/icon_document_handover.svg';
+  static String serach = 'lib/assets/icons/search.svg';
+  static String blood = 'lib/assets/icons/blood.svg';
+  static String heart = 'lib/assets/icons/heart.svg';
+  static String gym = 'lib/assets/icons/gym.svg';
+  static String analytics = 'lib/assets/icons/analytics.svg';
+  static String settings = 'lib/assets/icons/settings.svg';
 }

@@ -250,6 +250,10 @@ http_parser
 3.4
 file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.1.2/
 file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.1.2/lib/
+iconsax
+2.12
+file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/iconsax-0.0.8/
+file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/iconsax-0.0.8/lib/
 image_picker
 3.3
 file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/image_picker-1.1.2/
@@ -550,6 +554,14 @@ string_scanner
 3.1
 file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.4.1/
 file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.4.1/lib/
+syncfusion_flutter_charts
+3.7
+file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/syncfusion_flutter_charts-30.2.6+1/
+file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/syncfusion_flutter_charts-30.2.6+1/lib/
+syncfusion_flutter_core
+3.7
+file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/syncfusion_flutter_core-30.2.6/
+file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/syncfusion_flutter_core-30.2.6/lib/
 synchronized
 3.8
 file:///C:/Users/ehsan/AppData/Local/Pub/Cache/hosted/pub.dev/synchronized-3.4.0/
